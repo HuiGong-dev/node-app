@@ -1,15 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hui Gong</title>
+    <!-- normalize to suit different browser -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font aswsome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <h1>Thank you for checking up!</h1>
-    <h1>This site is under construction and will be updated soon.</h1>
-    
+    <header>
+        <div class="logo">
+            <img src="" alt="logo">
+        </div>
+        <button class="nav-toggle" aria-label="goggle nagivation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home">Home</a></li>
+                <li class="nav__item"><a href="#skills">My Skills</a></li>
+                <li class="nav__item"><a href="#about">About me</a></li>
+                <li class="nav__item"><a href="#projects">My Projects</a></li>
+                <li class="nav__item"><a href="#contact">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Hui Gong</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">a developer</p>
+        <img src="" alt="profile picture">
+    </section>
+
+    <!-- My Skills -->
+    <section class="my-skills" id="skills">
+        <h2 class="section__title section__title--skills">What I do</h2>
+        <div class="skills">
+            <div class="skill">
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi ut
+                    aliquip ex ea commodo consequat. Excepteur sint occaecat non, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div> <!-- / skill -->
+            <div class="skill">
+                <h3>Android Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi ut
+                    aliquip ex ea commodo consequat. Excepteur sint occaecat non, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div> <!-- / skill -->
+            <div class="skill">
+                <h3>Flutter</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi ut
+                    aliquip ex ea commodo consequat. Excepteur sint occaecat non, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div> <!-- / skill -->
+        </div> <!-- / skills -->
+        <a href="#myprojects" class="btn">My Projects</a>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__title section__subtitle--about">Lorem ipsum dolor sit amet consetur</p>
+        <div class="about-me__body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi ut
+                aliquip ex ea commodo consequat. Excepteur sint occaecat non, sunt in
+                culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis laboris nisi ut
+                aliquip ex ea commodo consequat. Excepteur sint occaecat non, sunt in
+                culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+        <img src="" alt="photo">
+    </section>
+
+    <!-- My Projects -->
+    <section class="my-projects" id="projects">
+        <h2 class="section__title section__title--projects">My Projects</h2>
+        <p class="section__subtitle section__subtitle--projects">A selection of my past projects </p>
+        <div class="portfolio">
+            <!-- portfolio item 01 -->
+            <a href="#" class="portfolio__item">
+                <img src="img/placeholder.png" alt="portfolio item image" class="portfolio__img">
+            </a>
+            <!-- portfolio item 02 -->
+            <a href="#" class="portfolio__item">
+                <img src="img/placeholder.png" alt="portfolio item image" class="portfolio__img">
+            </a>
+            <!-- portfolio item 03 -->
+            <a href="#" class="portfolio__item">
+                <img src="img/placeholder.png" alt="portfolio item image" class="portfolio__img">
+            </a>
+            <!-- portfolio item 04 -->
+            <a href="#" class="portfolio__item">
+                <img src="img/placeholder.png" alt="portfolio item image" class="portfolio__img">
+            </a>
+            <!-- portfolio item 05 -->
+            <a href="#" class="portfolio__item">
+                <img src="img/placeholder.png" alt="portfolio item image" class="portfolio__img">
+            </a>
+            <!-- portfolio item 06 -->
+            <a href="#" class="portfolio__item">
+                <img src="img/placeholder.png" alt="portfolio item image" class="portfolio__img">
+            </a>
+        </div>
+
+    </section>
+
+    <footer id="contact">
+        <a href="mailto:hellohuigong@gmail.com" class="footer__link">hellohuigong@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item"><a href="https://www.linkedin.com/in/helen-gong-874b7a7a/"
+                    class="social-list__link">LinkedIn</a></li>
+            <li class="social-list__item"><a href="https://github.com/HuiGong-dev/" class="social-list__link">GitHub</a>
+            </li>
+            <li class="social-list__item"><a href="https://huigong-dev.github.io/" class="social-list__link">Blog</a>
+            </li>
+        </ul>
+    </footer>
+
 </body>
+
 </html>
