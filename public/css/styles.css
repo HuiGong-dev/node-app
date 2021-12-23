@@ -52,6 +52,8 @@ img {
     max-width: 100%;
 }
 
+
+
 /* Typography */
 
 h1,
@@ -64,6 +66,15 @@ h3 {
 h1 {font-size: var(--fs-h1);}
 h2 {font-size: var(--fs-h2);}
 h3 {font-size: var(--fs-h3);}
+
+.logo {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-h3);
+    font-weight: var(--fw--bold);
+    color: var(--clr-dark);
+    text-decoration: none;
+
+}
 
 .section__title {
     margin-bottom: 0.25em;
