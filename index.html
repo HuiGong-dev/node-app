@@ -30,16 +30,16 @@
             <!-- <img src="" alt="logo"> -->
             <a href="#" class="logo">{huidev}</a>
         </div>
-        <button class="nav-toggle" aria-label="goggle nagivation">
+        <button class="nav-toggle" aria-label="toggle nagivation">
             <span class="hamburger"></span>
         </button>
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><a href="#home">Home</a></li>
-                <li class="nav__item"><a href="#skills">My Skills</a></li>
-                <li class="nav__item"><a href="#about">About me</a></li>
-                <li class="nav__item"><a href="#projects">My Projects</a></li>
-                <li class="nav__item"><a href="#contact">Contact me</a></li>
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#skills" class="nav__link">My Skills</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="#projects" class="nav__link">My Projects</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact me</a></li>
             </ul>
         </nav>
     </header>
@@ -97,7 +97,7 @@
                 culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
 
-        <img src="" alt="photo">
+        <img src="" alt="photo" class="about-me__img">
     </section>
 
     <!-- My Projects -->
@@ -121,14 +121,19 @@
 
     </section>
 
-    <footer id="contact">
+    <footer class="footer" id="contact">
         <a href="mailto:hellohuigong@gmail.com" class="footer__link">hellohuigong@gmail.com</a>
         <ul class="social-list">
-            <li class="social-list__item"><a href="https://www.linkedin.com/in/helen-gong-874b7a7a/"
-                    class="social-list__link">LinkedIn</a></li>
-            <li class="social-list__item"><a href="https://github.com/HuiGong-dev/" class="social-list__link">GitHub</a>
+            <li class="social-list__item">
+                <a href="https://www.linkedin.com/in/helen-gong-874b7a7a/" class="social-list__link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
             </li>
-            <li class="social-list__item"><a href="https://blog.hellohuigong.com/" class="social-list__link">Blog</a>
+            <li class="social-list__item">
+                <a href="https://github.com/HuiGong-dev/" class="social-list__link"><i class="fab fa-github"></i></a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://blog.hellohuigong.com/" class="social-list__link"><i class="fas fa-blog"></i></a>
             </li>
         </ul>
     </footer>
