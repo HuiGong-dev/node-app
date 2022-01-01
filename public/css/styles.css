@@ -251,7 +251,7 @@ header {
   box-shadow: var(--bs);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .intro {
     display: grid;
     width: min-content;
