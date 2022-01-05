@@ -70,20 +70,23 @@ img {
 /* Buttons */
 .btn {
   display: inline-block;
-  padding: 0.5em 2.5em;
-  background: var(--clr-accent);
-  color: var(--clr-dark);
+  padding: 0.25em 1em;
+  background: var(--clr-dark);
+  color: var(--clr-accent);
   text-decoration: none;
   cursor: pointer;
-  font-size: 0.8rem;
-  text-transform: uppercase;
+  font-size: var(--fs-body);
   letter-spacing: 2px;
-  font-weight: var(--fw--bold);
+  font-weight: var(--fw-reg);
   transition: transform 200ms ease-in-out;
+  width: max-content;
+
 }
 
 .btn:hover {
   transform: scale(1.1);
+
+  
 }
 
 /* Typography */
@@ -266,7 +269,7 @@ header {
 }
 
 .section__subtitle--intro {
-  color: var(--clr-darkgreen);
+  color: var(--clr-dark);
 }
 .section__intro__animation-area {
   display: none;
@@ -336,16 +339,16 @@ header {
 /* My Skills Section */
 
 .my-skills {
-  background-color: var(--clr-dark);
-  background-image: url(../img/bg.png);
-  background-blend-mode: hard-light;
-  color: var(--clr-light);
+  background-color: var(--clr-light);
+  /* background-image: url(../img/bg.png);
+  background-blend-mode: hard-light; */
+  color: var(--clr-dark);
   background-size: cover;
   text-align: center;
 }
 
 .section__title--skills {
-  color: var(--clr-accent);
+  color: var(--clr-dark);
   position: relative;
 }
 
@@ -355,25 +358,40 @@ header {
   width: 3em;
   height: 1px;
   margin: 0.5em auto 1em;
-  background: var(--clr-light);
+  background: var(--clr-dark);
   opacity: 0.25;
 }
 
 .skills {
-  margin-bottom: 4em;
+  margin-bottom: 1em;
 }
 
 .skill {
   max-width: 500px;
-  margin: 0 auto;
+  margin: 2em auto;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  padding: 2em 1em;
+  text-align: left;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
 }
+
+
 
 @media (min-width: 800px) {
   .skills {
     display: flex;
+    
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .skill {
+    margin: 0;
   }
 
   .skill + .skill {
@@ -393,7 +411,7 @@ header {
 }
 
 .section__subtitle--about {
-  color: var(--clr-darkgreen);
+  color: var(--clr-dark);
 }
 
 @media (min-width: 600px) {
