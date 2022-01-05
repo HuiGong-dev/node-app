@@ -307,7 +307,7 @@ header {
   }
   svg{ width:400px; height:400px; display:block; margin:2rem;}
 
-  /* test atomic flower */
+  /* ball in a circle animation */
   @keyframes bajar011 {
     to{
       transform:translateY(80px);
@@ -324,7 +324,7 @@ header {
   }
   .animacion011{ animation: bajar011 4s ease-in-out infinite alternate; }
   .animacion012{ animation: subir012 4s ease-in-out infinite alternate; }
-  /*end test*/
+  /* end enimation */
 
   .section__subtitle--intro {
     
