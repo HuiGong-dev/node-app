@@ -40,6 +40,7 @@
 
 strong {
   font-weight: var(--fw--bold);
+  display: block;
 }
 
 /* General Styles */
@@ -110,6 +111,7 @@ h3 {
 
 .section__title--intro {
   font-weight: var(--fw-reg);
+  width: max-content;
 }
 
 .section__title--intro strong {
@@ -125,7 +127,7 @@ h3 {
 .section__subtitle--about {
   background: var(--clr-accent);
   font-family: var(--ff-secondary);
-  padding: 0.25em 1em;
+  padding: 0.25em 0.5em;
   margin-bottom: 1em;
   display: inline-block;
 }
@@ -250,7 +252,7 @@ header {
   position: relative;
   background-color: var(--clr-dark);
   color: var(--clr-light);
-  text-align: center;
+  text-align: left;
 
   display: grid;
   place-items: center;
@@ -266,124 +268,68 @@ header {
 .section__subtitle--intro {
   color: var(--clr-darkgreen);
 }
+.section__intro__animation-area {
+  display: none;
+}
 
 @media (min-width: 1000px) {
   .intro {
-    display: grid;
-    place-items: center;
-    text-align: left;
-    padding-bottom: 17rem;
-    padding-top: 15rem;
-
-    margin-left: auto;
-    margin-right: auto;
-    grid-template-areas: "texts lines";
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    flex: 1 1 auto;
+    width: 100%;
+    height: 100%;
+    padding: 5rem;
+    
   }
   .section__intro__text-area {
-    grid-area: texts;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    padding-left: 12rem;
-    padding-right: 0rem;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    width: max-content;
+    
+    text-align: left;
+    
   }
 
   .section__intro__animation-area {
-    grid-area: lines;
-    display: table;
-    width: 100%;
-    height: 100%;
+    display: flex;
+    width: min-content;
+    height: max-content;
     background-color: var(--clr-dark);
     color: #000;
     line-height: 1.6;
     position: relative;
-    font-family: sans-serif;
     overflow: hidden;
   }
+  svg{ width:400px; height:400px; display:block; margin:2rem;}
 
-  .lines {
-    position: relative;
-    top: 0;
-    left: 0%;
-    right: 0;
-    height: 100%;
-    margin: auto;
-    width: auto;
-  }
-
-  .line {
-    position: absolute;
-    width: 1px;
-    height: 100%;
-    top: 0;
-    left: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    overflow: hidden;
-  }
-
-  .line::after {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 15vh;
-    width: 100%;
-    top: -50%;
-    left: 0;
-    background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0) 0%,
-      #ffffff 75%,
-      #ffffff 100%
-    );
-    -webkit-animation: drop 7s 0s infinite;
-    animation: drop 7s 0s infinite;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-    animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-  }
-  .line:nth-child(1) {
-    margin-left: -25%;
-  }
-  .line:nth-child(1)::after {
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
-  }
-  .line:nth-child(3) {
-    margin-left: 25%;
-  }
-  .line:nth-child(3)::after {
-    -webkit-animation-delay: 2.5s;
-    animation-delay: 2.5s;
-  }
-
-  @-webkit-keyframes drop {
-    0% {
-      top: -50%;
-    }
-    100% {
-      top: 110%;
+  /* test atomic flower */
+  @keyframes bajar011 {
+    to{
+      transform:translateY(80px);
+      fill:gray;
+      height:70px;
     }
   }
-
-  @keyframes drop {
-    0% {
-      top: -50%;
-    }
-    100% {
-      top: 110%;
+  @keyframes subir012{
+    to{
+      transform:translateY(-100px);
+      fill:gray;
+      height:70px;
     }
   }
+  .animacion011{ animation: bajar011 4s ease-in-out infinite alternate; }
+  .animacion012{ animation: subir012 4s ease-in-out infinite alternate; }
+  /*end test*/
 
   .section__subtitle--intro {
-    align-self: center;
-    grid-column: -1 / 1;
-    grid-row: 2;
+    
     text-align: left;
-    position: relative;
-    width: 100%;
+    width: max-content;
   }
 }
 
