@@ -409,6 +409,8 @@ header {
 
 .section__subtitle--about {
   color: var(--clr-dark);
+  margin-top: 0.5rem;
+  margin-bottom: 0;
 }
 
 @media (min-width: 600px) {
