@@ -84,9 +84,7 @@ img {
 }
 
 .btn:hover {
-  transform: scale(1.1);
-
-  
+  transform: translateX(5%);
 }
 
 /* Typography */
