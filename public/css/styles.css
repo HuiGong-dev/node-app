@@ -378,6 +378,17 @@ header {
   
 }
 
+.skill__text-area__title {
+  display: flex;
+  flex-direction: row;
+}
+
+.skill__text-area__title > i {
+  font-size: var(--fs-h3);
+  color: var(--clr-accent);
+  padding-right: 0.5em;
+}
+
 
 
 @media (min-width: 800px) {
